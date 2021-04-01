@@ -52,7 +52,22 @@ def decifrar(deque, texto_cifrado, chave):
                     break
     return decifrada
 
-adicionar_alfabeto(d, "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-print(decifrar(d, "DEFGHIJKLMNOPQRSTUVWXYZABC", 3))
-print(d.__str__())
 
+def selecionar_subconjunto_missoes():
+    hours_avaiable = int(input())
+    show = int(input())
+    ordination = int(input())
+    alfabet = input()
+    key = int(input())
+    num_missions = int(input())
+    d, missions = Deque(), []
+
+    adicionar_alfabeto(d, alfabet)
+
+    for i in range(num_missions):
+        stringi = input()
+        deciphered = decifrar(d, stringi.replace([], '') , key)
+        missions.append(deciphered.split(','))
+    if show == 1:
+        print("aqui vamos printar as missoes do subconjunto")
+    
