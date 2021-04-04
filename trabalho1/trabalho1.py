@@ -45,8 +45,10 @@ def decifrar(deque, texto_cifrado, chave):
                     new_letter = alfabeto[j - chave]
                     decifrada += new_letter
                     break
-                removed = deque.remove_rear()
-                deque.add_front(removed)
+        removed = deque.remove_rear()
+        deque.add_front(removed)
+    removed = deque.remove_rear()
+    deque.add_front(removed)
     return decifrada
 
 def selecionar_subconjunto_missoes():
@@ -118,3 +120,26 @@ def selecionar_subconjunto_missoes():
 
     print(f"Tempo restante: {hours_avaiable - sum([int(missao[1]) for missao in missoes_feitas])}")
     print(f"Valor: {sum(int(missao[2]) for missao in missoes_feitas)}")
+
+d = Deque()
+alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ '
+adicionar_alfabeto(d, alfabeto)
+texto_cifrado = 'XTYSLKNLCL'
+print(f'texto_plano: {decifrar(d, texto_cifrado, len(alfabeto))}')
+print(f'{str(d)}')
+print(f'{len(str(d))}')
+
+d = Deque()
+adicionar_alfabeto(d, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+print(f'Alfabeto: {d}')
+print(f'Tamanho: {len(str(d))}')
+
+d = Deque()
+adicionar_alfabeto(d, ' ')
+print(f'Alfabeto: {d}')
+print(f'Tamanho: {len(str(d))}')
+
+d = Deque()
+adicionar_alfabeto(d, '0123456789 ')
+print(f'Alfabeto: {d}')
+print(f'Tamanho: {len(str(d))}')
