@@ -1,0 +1,82 @@
+300
+1
+0
+ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789,;:'()_
+19
+27
+[gt:03xx8x,MEKMEELMxt;A]
+[T6wsf7)s 1;sot:v0s1;sX6wxwMDIMDJFM0t,w]
+[V0t8:x,sLOsl0xset,;0t4MDCMEFM0t,w]
+[k76;s7ys:0xs t,8AMEJMEKDM5xw1'5]
+[o0t:s1;sWxtwsetAsfx(x,sW1xMDDMDCLM5xw1'5]
+[V0t8:x,sDHOsl0xsUx41x(x,MEGMGJM0t,w]
+[l0xsf7,:0sjx5x5ux,;MHMDCFM0t,w]
+[V0t8:x,sEOsl0xsV014wMGMFM0t,w]
+[l0xsf1z0:sdt6w;MDMDCJM5xw1'5]
+[Utx47,MEHMLJM0t,w]
+[c1;;xwsuAsY1,xMDIMDJLM0t,w]
+[Tset6so1:07':s 767,MEKMDFJM5xw1'5]
+[ t,w075xMEFMFDDM5xw1'5]
+[V0t8:x,sGOskt6v:'t,AMEEMJM0t,w]
+[e0A;tMDGMDLLM5xw1'5]
+[Y1,;:s7ys 1;sft5xMIMEFFM5xw1'5]
+[o16:x,s1;sV7516zMDKMHLM0t,w]
+[nt4t,sW70tx,1;MEDMDHJM0t,w]
+[V0t8:x,sIOsl0xsh,1;76x,MELMDFM0t,w]
+[Zt,wx6s7ysU76x;MDMDDFMxt;A]
+[U4tv3)t:x,MDIMDGLM0t,w]
+[V0t8:x,sDGOsl0xsl,tzxwAMHMGFM0t,w]
+[V0t8:x,sFOsl0xsk16MDJMHMxt;A]
+[l0xsot,;s:7sV75xMDKMEILM5xw1'5]
+[V0t8:x,sDEOsl0xsk1xzxMFCMFJMxt;A]
+[e7:0x,P;sex,vAMEGMFDJM0t,w]
+[l0xs 7';xs7ysU4tv3st6wso01:xMEDMEJDMxt;A]
+
+
+
+
+
+1000
+1
+3
+ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789,;:'()_
+19
+27
+[l0xsV415uMDEMDKDM0t,w]
+[l0xsh,16vxs7yso16:x,yx44MDJMDFLM5xw1'5]
+[V0t8:x,sDOsl0xset6wt47,1t6MGMEMxt;A]
+[c144s:0xsU7AMHMEKFM5xw1'5]
+[U4tv3)t:x,MGMDGLMxt;A]
+[o16:x,s1;sV7516zMDFMHLM5xw1'5]
+[l0xso74yst6ws:0xsd176MDEMJFM0t,w]
+[Utx47,MDDMLJM0t,w]
+[Zt,wx6s7ysU76x;MEEMDDFMxt;A]
+[c1;;xwsuAsY1,xMDJMDJLM5xw1'5]
+[l0xs 7';xs7ysU4tv3st6wso01:xMEHMEJDM5xw1'5]
+[Tset6so1:07':s 767,MEDMDFJM5xw1'5]
+[T6wsf7)s 1;sot:v0s1;sX6wxwMEGMDJFM5xw1'5]
+[l0xsf7,:0sjx5x5ux,;MDDMDCFMxt;A]
+[nt4t,se7,z0'41;MEDMDHDM5xw1'5]
+[l0xsV014w,x6MELMEIFM5xw1'5]
+[V0t8:x,sDCOsl0xsht;;x6zx,MEEMELM5xw1'5]
+[V0t8:x,sIOsl0xsh,1;76x,MDKMDFMxt;A]
+[l0xse7'6:t16st6ws:0xsn18x,MELMEHDMxt;A]
+[l0xsjxwso75t6MDFMFFDM5xw1'5]
+[l)7sk)7,w;MDJMEDDM0t,w]
+[o0t:s1;sWxtwsetAsfx(x,sW1xMJMDCLMxt;A]
+[V0t8:x,sDEOsl0xsk1xzxMFCMFJM0t,w]
+[V0t8:x,sGOskt6v:'t,AMDIMJM0t,w]
+[V0t8:x,sEOsl0xsV014wMDJMFM0t,w]
+[U,xt3x,s7ysV0t16;MEEMEEJM0t,w]
+[l0xsUxt,st6ws:0xset1wx6sYt1,MHMDLDM0t,w]
+
+
+
+1000
+1
+1
+ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789,;:'()_
+19
+2
+[l0xsf1z0:sdt6w;MDHMDCJM5xw1'5]
+[l0xsV415uMEFMDKDM0t,w]

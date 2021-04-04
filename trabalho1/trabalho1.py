@@ -32,23 +32,17 @@ def adicionar_alfabeto(deque, alfabeto):
         deque.add_front(l)
 
 def decifrar(deque, texto_cifrado, chave):
-    alfabeto, size_cifrado, decifrada = deque.__str__(), len(texto_cifrado), ''
-    for i in range(len(texto_cifrado)):
-        for j in range(len(alfabeto)):
-            if texto_cifrado[i] == alfabeto[j]:
-                if j - chave < 0:
-                    negative = j - chave
-                    new_letter = alfabeto[len(alfabeto) - (-negative)]
-                    decifrada += new_letter
-                    break
-                else:
-                    new_letter = alfabeto[j - chave]
-                    decifrada += new_letter
-                    break
-        removed = deque.remove_rear()
-        deque.add_front(removed)
-    removed = deque.remove_rear()
-    deque.add_front(removed)
+    decifrada = ""
+    for i in texto_cifrado:
+        ponteiro = deque.remove_front()
+        deque.add_rear(ponteiro)
+        while ponteiro != i:
+            ponteiro = deque.remove_front()
+            deque.add_rear(ponteiro)       #aqui ele achou a letra
+        for i in range(chave):
+            ponteiro = deque.remove_front()
+            deque.add_rear(ponteiro)
+        decifrada += ponteiro
     return decifrada
 
 def selecionar_subconjunto_missoes():
@@ -101,22 +95,40 @@ def selecionar_subconjunto_missoes():
     missoes_feitas = solucao(matriz, missions)
 
     if show == 1:
+        array = []
+        for i in range(len(missoes_feitas)):
+            result = missoes_feitas[i][0] + ", " + missoes_feitas[i][1] + ", " + missoes_feitas[i][2] + ", " + \
+                     missoes_feitas[i][3]
+            array.append(result)
         if ordination == 0:
-            for i in range(len(missoes_feitas)):
-                result = missoes_feitas[i][0] + ", " + missoes_feitas[i][1] + ", " + missoes_feitas[i][2] + ", " + missoes_feitas[i][3]
-                print(result)
+           sorted_array = sorted(array)
         elif ordination == 1:
-            for i in range(len(missoes_feitas)):
-                result = missoes_feitas[i][1] + ", " + missoes_feitas[i][0] + ", " + missoes_feitas[i][2] + ", " + missoes_feitas[i][3]
-                print(result)
+            def ordering(e):
+                a = e.split(', ')
+                return int(a[1])
+            sorted_array = sorted(array, key=ordering)
         elif ordination == 2:
-            for i in range(len(missoes_feitas)):
-                result = missoes_feitas[i][2] + ", " + missoes_feitas[i][0] + ", " + missoes_feitas[i][1] + ", " + missoes_feitas[i][3]
-                print(result)
+            def ordering(e):
+                a = e.split(', ')
+                return int(a[2])
+            sorted_array = sorted(array, key=ordering)
         elif ordination == 3:
-            for i in range(len(missoes_feitas)):
-                result = missoes_feitas[i][3] + ", " + missoes_feitas[i][0] + ", " + missoes_feitas[i][1] + ", " + missoes_feitas[i][2]
-                print(result)
+            def ordering(array):
+                easy, medium, hard = [], [], []
+                for item in array:
+                    frase = item.split(', ')
+                    if frase[3] == "easy":
+                        easy.append(item)
+                    elif frase[3] == "medium":
+                        medium.append(item)
+                    elif frase[3] == "hard":
+                        hard.append(item)
+                sorted_easy, sorted_medium, sorted_hard = sorted(easy), sorted(medium), sorted(hard)
+                return sorted_easy + sorted_hard + sorted_medium
+            sorted_array = ordering(array)
+
+        for misson in sorted_array:
+            print(misson)
 
     print(f"Tempo restante: {hours_avaiable - sum([int(missao[1]) for missao in missoes_feitas])}")
     print(f"Valor: {sum(int(missao[2]) for missao in missoes_feitas)}")
@@ -143,3 +155,13 @@ d = Deque()
 adicionar_alfabeto(d, '0123456789 ')
 print(f'Alfabeto: {d}')
 print(f'Tamanho: {len(str(d))}')
+
+d = Deque()
+adicionar_alfabeto(d, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+texto_cifrado = 'ECUC'
+print(f'{str(d)}')
+print(f'texto_plano: {decifrar(d, texto_cifrado, 2)}')
+print(f'{str(d)}')
+print(f'{len(str(d))}')
+
+selecionar_subconjunto_missoes()
