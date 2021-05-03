@@ -9,18 +9,12 @@ class Stack:
         self.stack.append(item)
     
     def compare(self, item):
-        if item <= self.stack[len(self.stack) -1]:
-            return True
-        else:
-            return False
+        return True if item <= self.stack[len(self.stack) -1] else False
 
     def is_empty(self):
-        if self.stack == []:
-            return True
-        else:
-            return False
+        return True if self.stack == [] else False
+  
         
-
 def everybody_working(wookies, loads, count = 0):
     if count >= len(wookies) or loads == []:
         return wookies, loads
