@@ -54,10 +54,11 @@ else:
     after_job, rest_updated = unloading(workers, new_load, rest)
  
     printer = [laborer.stack for laborer in after_job]
-    printer.sort(reverse=True)
+    printer.sort(key= sum,reverse=True)
     [print(item, end=" ") for item in printer]
     if rest_updated.stack == []:
         print('\nA força está com os Wookies!')
     else:
         print()
         [print(item, end=" ") for item in rest_updated.stack]
+        print()
